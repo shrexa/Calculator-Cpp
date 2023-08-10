@@ -20,6 +20,12 @@ float multiply(float x, float y){
 void show(float c){
     cout<<"The answer is : "<<c;
 }
+void askType(){
+    int type;
+    cout<<"\n\n\t\t\t~ ~ ~ ~ TYPES OF CALCULATORS ~ ~ ~ ~\t\t\t\n\n";
+    cout<<"1.Standard Calculator\n2.Scientific Calculator\n\nEnter your Choice (1 or 2) : ";
+    cin>>type;
+}
 
 int main(){
     float a,b,sum,sub,div,mul;
