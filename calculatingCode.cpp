@@ -14,6 +14,31 @@ public:
     static double mul(double, double);
     // static double mod(double, double);
 };
+
+double StandardCalc::add(double a, double b)
+{
+    return (a + b);
+}
+
+double StandardCalc::sub(double a, double b)
+{
+    return (a - b);
+}
+
+double StandardCalc::div(double a, double b)
+{
+    return (a / b);
+}
+
+double StandardCalc::mul(double a, double b)
+{
+    return (a * b);
+}
+// double StandardCalc::mod(double a, double b)
+// {
+//     double mo = a % b;
+//     return mo;
+// }
 class ScientificCalc
 {
 public:
@@ -44,30 +69,7 @@ double ScientificCalc::cub(double a)
 // {
 //     return (a + b);
 // }
-double StandardCalc::add(double a, double b)
-{
-    return (a + b);
-}
 
-double StandardCalc::sub(double a, double b)
-{
-    return (a - b);
-}
-
-double StandardCalc::div(double a, double b)
-{
-    return (a / b);
-}
-
-double StandardCalc::mul(double a, double b)
-{
-    return (a * b);
-}
-// double StandardCalc::mod(double a, double b)
-// {
-//     double mo = a % b;
-//     return mo;
-// }
 
 // int type;
 // void askType(){
