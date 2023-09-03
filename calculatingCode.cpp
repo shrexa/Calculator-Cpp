@@ -83,8 +83,8 @@ int main()
 
     // void clrscr(void);
     // void askType(int type);
-StandardCalc obj1;
-ScientificCalc obj2;
+    StandardCalc obj1;
+    ScientificCalc obj2;
     // askType;
 
     cout << "\n\n\t\t\t ~ ~ ~ ~ TYPES OF CALCULATORS ~ ~ ~ ~ \t\t\t\n\n";
@@ -108,17 +108,15 @@ ScientificCalc obj2;
 
     if (type == 1)
     {
-        
+
         cout << "\n\n\t\t ~ ~ ~ Operations for Standard Calculator ~ ~ ~ \t\t\n\n";
         cout << "1.Addition\n2.Subraction\n3.Multiplication\n4.Division\n5.Modulus\n6.Go Back\n\nEnter your Choice : ";
         int t;
         cin >> t;
         // void clrscr();
-        
-         
-        cout<<"\n\n";
-        
-        
+
+        cout << "\n\n";
+
         switch (t)
         {
         case 1:
@@ -198,14 +196,14 @@ ScientificCalc obj2;
         int n;
         cin >> n;
         // void clrscr();
-        
-        cout<<"\n\n";
-        
+
+        cout << "\n\n";
+
         switch (n)
         {
         case 1:
-         {
-             double n1;
+        {
+            double n1;
             cout << "Enter the number : ";
             cin >> n1;
             double ans1;
@@ -232,8 +230,8 @@ ScientificCalc obj2;
             ans1 = obj2.cub(n1);
             cout << "The cube of " << n1 << " is " << ans1 << endl;
         }
-         break;
-         
+        break;
+
         case 4:
             double base, exponent, result;
             cout << "Enter the base: ";
@@ -249,15 +247,18 @@ ScientificCalc obj2;
             int factorial = 1;
             cout << "Enter a positive integer: ";
             cin >> num;
-            for (int i = 1; i <= num; i++) {
+            for (int i = 1; i <= num; i++)
+            {
                 factorial = factorial * i; // multiplying the previous factorial by i
-            } cout
-            << "The factorial of " << num << " is " << factorial << endl;
+            }
+            cout
+                << "The factorial of " << num << " is " << factorial << endl;
             break;
         // default:
         //     cout << "\nPlease Enter a valid choice no.! ( between 1 to 9 only) ";
         //     break;
         }
+        
     }
     else
     {
