@@ -1,6 +1,7 @@
 #include <iostream>
 #include <conio.h>
-#include <math.h>
+#include <conio.h>
+#include <cmath>
 #include <stdlib.h>
 using namespace std;
 
@@ -13,7 +14,35 @@ public:
     static double mul(double, double);
     // static double mod(double, double);
 };
-
+class ScientificCalc
+{
+public:
+    static double Sqt(double);
+    static double sq(double);
+    static double cub(double, double);
+    static double powr(double, double);
+    static double fact(double, double);
+};
+double ScientificCalc::Sqt(double a)
+{
+    double root1 = sqrt(a);
+    // sqrt is a keyword
+    return root1;
+}
+double ScientificCalc::Sq(double a)
+{
+    double num1 = a * a;
+    return num1;
+}
+double ScientificCalc::cub(double a)
+{
+    double num2 = a * a * a;
+    return num2;
+}
+// double ScientificCalc::powr(double a, double b)
+// {
+//     return (a + b);
+// }
 double StandardCalc::add(double a, double b)
 {
     return (a + b);
@@ -60,129 +89,147 @@ int main()
     cout << "1.Standard Calculator\n2.Scientific Calculator\n\nEnter your Choice : ";
     int type;
     cin >> type;
-    if (type==1)
-    {
-        cout<<"one";
-    }
-    else if (type==2)
-    {
-        cout<<"2";
-    }
-    else
-    {
-        cout<<"idk";
-    }
-    
-    // clrscr();
-
-    // if (type == 1)
+    // if (type==1)
     // {
-    //     StandardCalc obj1;
-    //     cout << "\n\n\t\t ~ ~ ~ Operations for Standard Calculator ~ ~ ~ \t\t\n\n";
-    //     cout << "1.Addition\n2.Subraction\n3.Multiplication\n4.Division\n5.Modulus\n6.Go Back\n\nEnter your Choice : ";
-    //     int t;
-    //     cin >> t;
-    //     // void clrscr();
-    //     switch (t)
-    //     {
-    //     case 1:
-    //     {
-    //         double n1, n2;
-    //         cout << "Enter the number 1 : ";
-    //         cin >> n1;
-    //         cout << "Enter the number 2 : ";
-    //         cin >> n2;
-    //         double ans1;
-    //         ans1 = obj1.add(n1, n2);
-    //         cout << "Addition is " << ans1 << endl;
-    //         break;
-    //     }
-    //     case 2:
-    //     {
-    //         double n1, n2;
-    //         cout << "Enter the number 1 : ";
-    //         cin >> n1;
-    //         cout << "Enter the number 2 : ";
-    //         cin >> n2;
-    //         double ans2;
-    //         ans2 = obj1.sub(n1, n2);
-    //         cout << "Subtraction is " << ans2;
-    //         break;
-    //     }
-    //     case 3:
-    //     {
-    //         double n1, n2;
-    //         cout << "Enter the number 1 : ";
-    //         cin >> n1;
-    //         cout << "Enter the number 2 : ";
-    //         cin >> n2;
-    //         double ans2;
-    //         ans2 = obj1.mul(n1, n2);
-    //         cout << "Multiplication is " << ans2;
-    //         break;
-    //     }
-    //     case 4:
-    //     {
-    //         double n1, n2;
-    //         cout << "Enter the number 1 : ";
-    //         cin >> n1;
-    //         cout << "Enter the number 2 : ";
-    //         cin >> n2;
-    //         double ans2;
-    //         ans2 = obj1.div(n1, n2);
-    //         cout << "Division is " << ans2;
-    //         break;
-    //     }
-    //     case 5:
-    //     {
-    //         int n1, n2;
-    //         cout << "Enter the number 1 : ";
-    //         cin >> n1;
-    //         cout << "Enter the number 2 : ";
-    //         cin >> n2;
-    //         //         double ans2;
-    //         //         ans2 = obj1.mod(n1, n2);
-    //         //         cout << "Modulus is " << ans2;
-    //         int modul;
-    //         modul = n1 % n2;
-    //         cout << "The modulus of " << n1 << " and " << n2 << " is " << modul << endl;
-    //         break;
-    //     }
-    //     default:
-    //     {
-    //         cout << "\nPlease Enter a valid choice no.! ( between 1 to 6 only) ";
-    //         break;
-    //     }
-    //     }
+    //     cout<<"one";
     // }
-    // else if (type == 2){
-    //     cout << "\n\n\t\t ~ ~ ~ Operations for Scientific Calculator~ ~ ~ \t\t\n\n";
-    //     cout << "1.Sqaure Root\n2.Square\n3.Cube\n4.Power\n5.Factorial\n6.Sine function\n7.Cos Function\n8.Tan Function\n9.Go Back\n\nEnter your Choice : ";
-    //     int n;
-    //     cin >> n;
-    //     // void clrscr();
-    //     switch (n)
-    //     {
-    //     case 1:
-    //         cout << "power lga";
-    //         break;
-    //     case 2:
-    //         break;
-    //     case 3:
-    //         break;
-    //     case 4:
-    //         break;
-
-    //     default:
-    //         cout << "\nPlease Enter a valid choice no.! ( between 1 to 9 only) ";
-    //         break;
-    //     }
+    // else if (type==2)
+    // {
+    //     cout<<"2";
     // }
     // else
     // {
-    //     cout << "\nPlease Enter 1 or 2 only ! ";
-    //     cin >> type;
+    //     cout<<"idk";
     // }
+
+    // clrscr();
+
+    if (type == 1)
+    {
+        StandardCalc obj1;
+        cout << "\n\n\t\t ~ ~ ~ Operations for Standard Calculator ~ ~ ~ \t\t\n\n";
+        cout << "1.Addition\n2.Subraction\n3.Multiplication\n4.Division\n5.Modulus\n6.Go Back\n\nEnter your Choice : ";
+        int t;
+        cin >> t;
+        // void clrscr();
+        switch (t)
+        {
+        case 1:
+        {
+            double n1, n2;
+            cout << "Enter the number 1 : ";
+            cin >> n1;
+            cout << "Enter the number 2 : ";
+            cin >> n2;
+            double ans1;
+            ans1 = obj1.add(n1, n2);
+            cout << "Addition is " << ans1 << endl;
+            break;
+        }
+        case 2:
+        {
+            double n1, n2;
+            cout << "Enter the number 1 : ";
+            cin >> n1;
+            cout << "Enter the number 2 : ";
+            cin >> n2;
+            double ans2;
+            ans2 = obj1.sub(n1, n2);
+            cout << "Subtraction is " << ans2;
+            break;
+        }
+        case 3:
+        {
+            double n1, n2;
+            cout << "Enter the number 1 : ";
+            cin >> n1;
+            cout << "Enter the number 2 : ";
+            cin >> n2;
+            double ans2;
+            ans2 = obj1.mul(n1, n2);
+            cout << "Multiplication is " << ans2;
+            break;
+        }
+        case 4:
+        {
+            double n1, n2;
+            cout << "Enter the number 1 : ";
+            cin >> n1;
+            cout << "Enter the number 2 : ";
+            cin >> n2;
+            double ans2;
+            ans2 = obj1.div(n1, n2);
+            cout << "Division is " << ans2;
+            break;
+        }
+        case 5:
+        {
+            int n1, n2;
+            cout << "Enter the number 1 : ";
+            cin >> n1;
+            cout << "Enter the number 2 : ";
+            cin >> n2;
+            //         double ans2;
+            //         ans2 = obj1.mod(n1, n2);
+            //         cout << "Modulus is " << ans2;
+            int modul;
+            modul = n1 % n2;
+            cout << "The modulus of " << n1 << " and " << n2 << " is " << modul << endl;
+            break;
+        }
+        default:
+        {
+            cout << "\nPlease Enter a valid choice no.! ( between 1 to 6 only) ";
+            break;
+        }
+        }
+    }
+    else if (type == 2)
+    {
+        cout << "\n\n\t\t ~ ~ ~ Operations for Scientific Calculator~ ~ ~ \t\t\n\n";
+        cout << "1.Sqaure Root\n2.Square\n3.Cube\n4.Power\n5.Factorial\n6.Sine function\n7.Cos Function\n8.Tan Function\n9.Go Back\n\nEnter your Choice : ";
+        int n;
+        cin >> n;
+        // void clrscr();
+        switch (n)
+        {
+        case 1:
+            cout << "power lga";
+            break;
+        case 2:
+            break;
+        case 3:
+            break;
+        case 4:
+            double base, exponent, result;
+            cout << "Enter the base: ";
+            cin >> base;
+            cout << "Enter the exponent: ";
+            cin >> exponent;
+            result = pow(base, exponent);
+            // using the pow() function from cmath library
+            cout << base << " raised to the power of " << exponent << " is " << result << endl;
+            break;
+        case 5;
+            int num, factorial = 1;
+            cout << "Enter a positive integer: ";
+            cin >> num;
+            for (int i = 1; i <= num; i++) {
+                factorial = factorial * i; // multiplying the previous factorial by i
+            } cout
+            << "The factorial of " << num << " is " << factorial << endl;
+            break;
+
+            default:
+            cout << "\nPlease Enter a valid choice no.! ( between 1 to 9 only) ";
+            break;
+        }
+    }
+    else
+    {
+        cout << "\nPlease Enter 1 or 2 only ! ";
+        cin >> type;
+    }
 
     return 0;
 }
