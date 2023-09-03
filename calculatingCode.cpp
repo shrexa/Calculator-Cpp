@@ -91,19 +91,7 @@ ScientificCalc obj2;
     cout << "1.Standard Calculator\n2.Scientific Calculator\n\nEnter your Choice : ";
     int type;
     cin >> type;
-    // if (type==1)
-    // {
-    //     cout<<"one";
-    // }
-    // else if (type==2)
-    // {
-    //     cout<<"2";
-    // }
-    // else
-    // {
-    //     cout<<"idk";
-    // }
-
+    
     // clrscr();
 
     if (type == 1)
